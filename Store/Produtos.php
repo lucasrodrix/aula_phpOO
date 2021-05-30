@@ -6,7 +6,7 @@ class Produto{
 
     public function __construct(){
         try {
-            $this->conn = new PDO("pgsql:host=localhost;port=5432;dbname=store;user=postgres;password=rodrix3301");
+            $this->conn = new PDO("pgsql:host=localhost;port=5432;dbname=exemplo;user=postgres;password=rodrix3301");
         } catch (Exception $e){
             echo $e->getMessage();
             die();

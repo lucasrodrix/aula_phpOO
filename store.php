@@ -4,9 +4,9 @@ declare(strict_types=1);
 require ".\Store\Produtos.php";
 $produto = new Produto();
 
-switch ($$_GET['operacao']) {
+switch ($_GET['operacao']) {
     case 'listar':
-        foreach ($$produto->listar() as $key => $value) {
+        foreach ($produto->listar() as $key => $value) {
             echo 'ID: '.$value['id'].'</br> Descrição: '.$value['descricao'].'<hr>';
         }
     break;
